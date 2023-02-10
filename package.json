@@ -1,0 +1,19 @@
+{
+  "name": "bundle-splitting",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230115.0",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.4",
+    "wrangler": "https://prerelease-registry.devprod.cloudflare.dev/prs/2539/npm-package-wrangler-2539"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev --experimental-local --compatibility-flag=nodejs_compat",
+    "deploy": "wrangler publish",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
